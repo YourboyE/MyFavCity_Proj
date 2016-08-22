@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutVC" customModule="MyFavCity_Proj" customModuleProvider="target">
+            <connections>
+                <outlet property="scroller" destination="EIq-H3-gSD" id="w2s-uv-YTN"/>
+                <outlet property="scrollerLandscapeFive" destination="zaE-RS-q42" id="tGr-rr-p09"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CenterOfTheArts" translatesAutoresizingMaskIntoConstraints="NO" id="G3X-e5-HFq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="221"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="221" id="ENH-wI-EeY">
+                            <variation key="heightClass=compact" constant="200"/>
+                            <variation key="heightClass=compact-widthClass=regular" constant="402"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="301" id="a8s-zD-bgO">
+                            <variation key="heightClass=compact" constant="400"/>
+                            <variation key="heightClass=compact-widthClass=regular" constant="423"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="a8s-zD-bgO"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact" misplaced="YES">
+                        <rect key="frame" x="350" y="0.0" width="250" height="200"/>
+                        <mask key="constraints">
+                            <include reference="a8s-zD-bgO"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpP-uy-qLj" userLabel="backBtn">
+                    <rect key="frame" x="8" y="8" width="60" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="EfJ-th-nR4"/>
+                        <constraint firstAttribute="width" constant="60" id="hcd-vK-TB5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="0.93883203532039128" green="1" blue="0.94158974337702073" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onBackBtnTapped:" destination="-1" eventType="touchUpInside" id="sR3-lG-kSe"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sK-Uu-nk0" userLabel="View- 5.5 Landscape ">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaE-RS-q42" userLabel="Scroll View Landscape Five">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="60" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-DB-cId" userLabel="Info">
+                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1200" id="JAv-Ck-1W8"/>
+                                        <constraint firstAttribute="width" constant="340" id="jGJ-U9-Wq3"/>
+                                    </constraints>
+                                    <string key="text">Settled in a long valley in the coastal mountains of Southern California, Escondido provides a thriving urban environment in the midst of gentle rolling hills and avocado and citrus groves. Escondido lies about 18 miles inland, 100 miles south of Los Angeles, and 30 miles northeast of San Diego.
+
+Inland North San Diego County, of which Escondido is at the core, is emerging as a regional economic leader in the forefront of job development and new industries.
+
+The City of Escondido is a vibrant and diverse community made up largely of successful small businesses, many of which are family-owned.
+
+The centerpiece of the City's redevelopment efforts is the California Center for the Arts, Escondido which attracts more than 270,000 visitors from San Diego and surrounding regions each year and provides a significant boost to an already healthy economy. The Center is conveniently located in a charming downtown area, adjacent to historic Grape Day Park.
+
+Escondido is a wonderful place to visit, live, work, play, or do business, and provides a business-friendly environment.
+
+The location of Escondido was first identified and discovered by Juan Bautista de Anza, a Spanish explorer, in 1776. Later, the area became part of the Rancho Rincon del Diablo (the devil's corner) land grant bestowed to Juan Bautista Alvarado in 1843 by Mexican Governor Manuel Micheltoren. In 1886, the Escondido Land and Town Company acquired the land grant, laid out the town site, and divided the valley into small farms suitable for grapes or citrus.
+
+On October 8, 1888, the city was incorporated and its voters elected a council, clerk, treasurer, and marshal.
+
+Today, Escondido is a full-service, general-law city with five council members elected at large. Escondido operates under the Council-Manager form of government. This is the system of local government that combines the strong political leadership of elected officials in the form of a council with the strong managerial experience of an appointed local government manager. The Mayor presides at the City Council and Community Development Commission Board meetings.
+</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="JAv-Ck-1W8"/>
+                                            <exclude reference="jGJ-U9-Wq3"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=regular">
+                                        <mask key="constraints">
+                                            <include reference="JAv-Ck-1W8"/>
+                                            <include reference="jGJ-U9-Wq3"/>
+                                        </mask>
+                                    </variation>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="L2f-DB-cId" secondAttribute="bottom" id="Ba8-PZ-A7X"/>
+                                <constraint firstItem="L2f-DB-cId" firstAttribute="top" secondItem="zaE-RS-q42" secondAttribute="top" id="PP9-jh-uNg"/>
+                                <constraint firstAttribute="trailing" secondItem="L2f-DB-cId" secondAttribute="trailing" id="bTM-hj-Jc2"/>
+                                <constraint firstItem="L2f-DB-cId" firstAttribute="leading" secondItem="zaE-RS-q42" secondAttribute="leading" id="q4G-cl-rVJ"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="L2f-DB-cId"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="Ba8-PZ-A7X"/>
+                                    <exclude reference="PP9-jh-uNg"/>
+                                    <exclude reference="bTM-hj-Jc2"/>
+                                    <exclude reference="q4G-cl-rVJ"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact-widthClass=regular">
+                                <mask key="subviews">
+                                    <include reference="L2f-DB-cId"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="Ba8-PZ-A7X"/>
+                                    <include reference="PP9-jh-uNg"/>
+                                    <include reference="bTM-hj-Jc2"/>
+                                    <include reference="q4G-cl-rVJ"/>
+                                </mask>
+                            </variation>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="zaE-RS-q42" firstAttribute="leading" secondItem="5sK-Uu-nk0" secondAttribute="leading" id="0RT-at-iur"/>
+                        <constraint firstItem="zaE-RS-q42" firstAttribute="top" secondItem="5sK-Uu-nk0" secondAttribute="top" id="MIj-We-Ngm"/>
+                        <constraint firstAttribute="trailing" secondItem="zaE-RS-q42" secondAttribute="trailing" id="aDD-gE-VeV"/>
+                        <constraint firstAttribute="trailing" secondItem="zaE-RS-q42" secondAttribute="trailing" id="bUf-tU-Tjk"/>
+                        <constraint firstAttribute="bottom" secondItem="zaE-RS-q42" secondAttribute="bottom" id="oZI-SJ-b30"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="zaE-RS-q42"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="0RT-at-iur"/>
+                            <exclude reference="MIj-We-Ngm"/>
+                            <exclude reference="aDD-gE-VeV"/>
+                            <exclude reference="bUf-tU-Tjk"/>
+                            <exclude reference="oZI-SJ-b30"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="subviews">
+                            <include reference="zaE-RS-q42"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="0RT-at-iur"/>
+                            <include reference="MIj-We-Ngm"/>
+                            <include reference="aDD-gE-VeV"/>
+                            <include reference="bUf-tU-Tjk"/>
+                            <include reference="oZI-SJ-b30"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-ny-CAa" userLabel="View - With Scroller (Portrait)">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-H3-gSD">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="210" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6t-iI-KSL">
+                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1380" id="0bE-Lh-y78">
+                                            <variation key="heightClass=compact" constant="800"/>
+                                        </constraint>
+                                        <constraint firstAttribute="width" constant="300" id="W3E-2e-XCe">
+                                            <variation key="heightClass=compact" constant="500"/>
+                                        </constraint>
+                                    </constraints>
+                                    <string key="text">Settled in a long valley in the coastal mountains of Southern California, Escondido provides a thriving urban environment in the midst of gentle rolling hills and avocado and citrus groves. Escondido lies about 18 miles inland, 100 miles south of Los Angeles, and 30 miles northeast of San Diego.
+
+Inland North San Diego County, of which Escondido is at the core, is emerging as a regional economic leader in the forefront of job development and new industries.
+
+The City of Escondido is a vibrant and diverse community made up largely of successful small businesses, many of which are family-owned.
+
+The centerpiece of the City's redevelopment efforts is the California Center for the Arts, Escondido which attracts more than 270,000 visitors from San Diego and surrounding regions each year and provides a significant boost to an already healthy economy. The Center is conveniently located in a charming downtown area, adjacent to historic Grape Day Park.
+
+Escondido is a wonderful place to visit, live, work, play, or do business, and provides a business-friendly environment.
+
+The location of Escondido was first identified and discovered by Juan Bautista de Anza, a Spanish explorer, in 1776. Later, the area became part of the Rancho Rincon del Diablo (the devil's corner) land grant bestowed to Juan Bautista Alvarado in 1843 by Mexican Governor Manuel Micheltoren. In 1886, the Escondido Land and Town Company acquired the land grant, laid out the town site, and divided the valley into small farms suitable for grapes or citrus.
+
+On October 8, 1888, the city was incorporated and its voters elected a council, clerk, treasurer, and marshal.
+
+Today, Escondido is a full-service, general-law city with five council members elected at large. Escondido operates under the Council-Manager form of government. This is the system of local government that combines the strong political leadership of elected officials in the form of a council with the strong managerial experience of an appointed local government manager. The Mayor presides at the City Council and Community Development Commission Board meetings.
+</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <string key="userLabel">Settled in a long valley in the coastal mountains of Southern California, Escondido provides a thriving urban environment in the midst of gentle rolling hills and avocado and citrus groves. Escondido lies about 18 miles inland, 100 miles south of Los Angeles, and 30 miles northeast of San Diego.  Inland North San Diego County, of which Escondido is at the core, is emerging as a regional economic leader in the forefront of job development and new industries.  The City of Escondido is a vibrant and diverse community made up largely of successful small businesses, many of which are family-owned.  The centerpiece of the City's redevelopment efforts is the California Center for the Arts, Escondido which attracts more than 270,000 visitors from San Diego and surrounding regions each year and provides a significant boost to an already healthy economy. The Center is conveniently located in a charming downtown area, adjacent to historic Grape Day Park.  Escondido is a wonderful place to visit, live, work, play, or do business, and provides a business-friendly environment.  The location of Escondido was first identified and discovered by Juan Bautista de Anza, a Spanish explorer, in 1776. Later, the area became part of the Rancho Rincon del Diablo (the devil's corner) land grant bestowed to Juan Bautista Alvarado in 1843 by Mexican Governor Manuel Micheltoren. In 1886, the Escondido Land and Town Company acquired the land grant, laid out the town site, and divided the valley into small farms suitable for grapes or citrus.  On October 8, 1888, the city was incorporated and its voters elected a council, clerk, treasurer, and marshal.  Today, Escondido is a full-service, general-law city with five council members elected at large. Escondido operates under the Council-Manager form of government. This is the system of local government that combines the strong political leadership of elected officials in the form of a council with the strong managerial experience of an appointed local government manager. The Mayor presides at the City Council and Community Development Commission Board meetings.</string>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="0bE-Lh-y78"/>
+                                            <exclude reference="W3E-2e-XCe"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="0bE-Lh-y78"/>
+                                            <include reference="W3E-2e-XCe"/>
+                                        </mask>
+                                    </variation>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="z6t-iI-KSL" firstAttribute="top" secondItem="EIq-H3-gSD" secondAttribute="top" constant="8" id="3tG-qk-ctw"/>
+                                <constraint firstItem="z6t-iI-KSL" firstAttribute="leading" secondItem="EIq-H3-gSD" secondAttribute="leading" id="ek7-Zr-GRB"/>
+                                <constraint firstAttribute="trailing" secondItem="z6t-iI-KSL" secondAttribute="trailing" constant="8" id="p9O-TY-vDe"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="z6t-iI-KSL"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="3tG-qk-ctw"/>
+                                    <exclude reference="ek7-Zr-GRB"/>
+                                    <exclude reference="p9O-TY-vDe"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="387" height="297"/>
+                                <mask key="subviews">
+                                    <include reference="z6t-iI-KSL"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="3tG-qk-ctw"/>
+                                    <include reference="ek7-Zr-GRB"/>
+                                    <include reference="p9O-TY-vDe"/>
+                                </mask>
+                            </variation>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EIq-H3-gSD" secondAttribute="bottom" id="ETZ-Bf-vCx"/>
+                        <constraint firstItem="EIq-H3-gSD" firstAttribute="leading" secondItem="LQx-ny-CAa" secondAttribute="leading" id="rGS-A5-KeT"/>
+                        <constraint firstItem="EIq-H3-gSD" firstAttribute="top" secondItem="LQx-ny-CAa" secondAttribute="top" id="uxC-EK-k6g"/>
+                        <constraint firstAttribute="trailing" secondItem="EIq-H3-gSD" secondAttribute="trailing" id="xr5-GZ-32B"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="EIq-H3-gSD"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="ETZ-Bf-vCx"/>
+                            <exclude reference="rGS-A5-KeT"/>
+                            <exclude reference="uxC-EK-k6g"/>
+                            <exclude reference="xr5-GZ-32B"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="5" y="296" width="387" height="296"/>
+                        <mask key="subviews">
+                            <include reference="EIq-H3-gSD"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="ETZ-Bf-vCx"/>
+                            <include reference="rGS-A5-KeT"/>
+                            <include reference="uxC-EK-k6g"/>
+                            <include reference="xr5-GZ-32B"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="5" y="296" width="387" height="496"/>
+                    </variation>
+                </view>
+                <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="pXK-ec-xUa">
+                    <rect key="frame" x="0.0" y="222" width="600" height="68"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="waa-2G-w7W">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="41"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Population: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qy-O1-mH4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="28"/>
+                                    </variation>
+                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                    </variation>
+                                    <variation key="widthClass=regular" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="28"/>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="28"/>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="21"/>
+                                    </variation>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="143,911" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU9-g4-jDD">
+                                    <rect key="frame" x="0.0" y="21" width="600" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="28" width="200" height="21"/>
+                                    </variation>
+                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="21" width="600" height="21"/>
+                                    </variation>
+                                    <variation key="widthClass=regular" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="21" width="600" height="21"/>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="28" width="200" height="21"/>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="28" width="380" height="21"/>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="21" width="380" height="21"/>
+                                    </variation>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="600" id="Qnm-1n-220">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="380"/>
+                                </constraint>
+                            </constraints>
+                            <variation key="heightClass=regular" misplaced="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="41"/>
+                            </variation>
+                            <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="41"/>
+                            </variation>
+                            <variation key="widthClass=regular" misplaced="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="41"/>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="41"/>
+                            </variation>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YEa-Jl-sTP">
+                            <rect key="frame" x="0.0" y="47" width="600" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pda-XM-cEv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=compact" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="26"/>
+                                    </variation>
+                                    <variation key="widthClass=regular" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="26"/>
+                                    </variation>
+                                    <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="26"/>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="21"/>
+                                    </variation>
+                                </label>
+                            </subviews>
+                            <variation key="heightClass=compact" misplaced="YES">
+                                <rect key="frame" x="0.0" y="55" width="200" height="26"/>
+                            </variation>
+                            <variation key="heightClass=regular" misplaced="YES">
+                                <rect key="frame" x="0.0" y="51" width="600" height="21"/>
+                            </variation>
+                            <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <rect key="frame" x="0.0" y="47" width="600" height="21"/>
+                            </variation>
+                            <variation key="widthClass=regular" misplaced="YES">
+                                <rect key="frame" x="0.0" y="47" width="600" height="21"/>
+                            </variation>
+                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="0.0" y="55" width="200" height="26"/>
+                            </variation>
+                            <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                <rect key="frame" x="0.0" y="55" width="380" height="26"/>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <rect key="frame" x="0.0" y="47" width="380" height="21"/>
+                            </variation>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="268" id="IEJ-oR-p6B">
+                            <variation key="heightClass=compact" constant="80"/>
+                            <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="380" id="zZy-GN-mwY">
+                            <variation key="heightClass=compact-widthClass=regular" constant="380"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="IEJ-oR-p6B"/>
+                            <exclude reference="zZy-GN-mwY"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact" distribution="fillProportionally">
+                        <mask key="constraints">
+                            <include reference="IEJ-oR-p6B"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular" misplaced="YES">
+                        <rect key="frame" x="5" y="226" width="600" height="72"/>
+                    </variation>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="5" y="226" width="600" height="68"/>
+                    </variation>
+                    <variation key="widthClass=regular" misplaced="YES">
+                        <rect key="frame" x="5" y="226" width="600" height="68"/>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="310" y="10" width="200" height="80"/>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular" distribution="fillProportionally">
+                        <mask key="constraints">
+                            <include reference="zZy-GN-mwY"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="5" y="226" width="380" height="68"/>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.79455128205128212" green="0.79455128205128212" blue="0.79455128205128212" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="pXK-ec-xUa" firstAttribute="top" secondItem="G3X-e5-HFq" secondAttribute="bottom" constant="5" id="08q-Uy-MuC">
+                    <variation key="heightClass=compact" constant="-80"/>
+                    <variation key="heightClass=compact-widthClass=regular" constant="-351"/>
+                </constraint>
+                <constraint firstItem="5sK-Uu-nk0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Fz-6J-Wcy"/>
+                <constraint firstItem="dpP-uy-qLj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="1Ev-YR-fat"/>
+                <constraint firstAttribute="trailing" secondItem="dpP-uy-qLj" secondAttribute="trailing" constant="17" id="D8W-KQ-ebm"/>
+                <constraint firstAttribute="bottom" secondItem="5sK-Uu-nk0" secondAttribute="bottom" id="Epd-Ky-FP2"/>
+                <constraint firstItem="LQx-ny-CAa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="F4d-Te-vCH"/>
+                <constraint firstItem="LQx-ny-CAa" firstAttribute="top" secondItem="pXK-ec-xUa" secondAttribute="bottom" constant="1" id="IzD-TF-RqQ"/>
+                <constraint firstAttribute="bottom" secondItem="G3X-e5-HFq" secondAttribute="bottom" id="Lj8-hf-F9X"/>
+                <constraint firstItem="G3X-e5-HFq" firstAttribute="leading" secondItem="5sK-Uu-nk0" secondAttribute="trailing" id="MYu-Vc-uhU"/>
+                <constraint firstItem="G3X-e5-HFq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nv0-RY-sKu">
+                    <variation key="heightClass=compact" constant="245"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="G3X-e5-HFq" secondAttribute="trailing" id="PMl-U8-wg2">
+                    <variation key="heightClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstItem="pXK-ec-xUa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="QeN-Dk-6dd">
+                    <variation key="heightClass=compact" constant="8"/>
+                    <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="G3X-e5-HFq" secondAttribute="trailing" id="T0k-0w-kry"/>
+                <constraint firstAttribute="trailing" secondItem="G3X-e5-HFq" secondAttribute="trailing" id="Zpz-uW-Web">
+                    <variation key="heightClass=compact-widthClass=regular" constant="-11"/>
+                </constraint>
+                <constraint firstItem="dpP-uy-qLj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="ccF-Ff-kcS"/>
+                <constraint firstAttribute="bottom" secondItem="LQx-ny-CAa" secondAttribute="bottom" constant="8" id="f3x-vq-7bO"/>
+                <constraint firstItem="dpP-uy-qLj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hUK-As-DqE"/>
+                <constraint firstItem="5sK-Uu-nk0" firstAttribute="top" secondItem="pXK-ec-xUa" secondAttribute="bottom" constant="7" id="pEK-OU-tcV"/>
+                <constraint firstItem="G3X-e5-HFq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pfg-Au-r8I">
+                    <variation key="heightClass=compact-widthClass=regular" constant="-2"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="LQx-ny-CAa" secondAttribute="trailing" constant="8" id="vtL-l8-40T"/>
+                <constraint firstItem="G3X-e5-HFq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xCl-hD-Icc">
+                    <variation key="heightClass=compact-widthClass=regular" constant="-2"/>
+                </constraint>
+                <constraint firstItem="G3X-e5-HFq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xff-M9-oUm"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="5sK-Uu-nk0"/>
+                    <exclude reference="LQx-ny-CAa"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0Fz-6J-Wcy"/>
+                    <exclude reference="Epd-Ky-FP2"/>
+                    <exclude reference="pEK-OU-tcV"/>
+                    <exclude reference="F4d-Te-vCH"/>
+                    <exclude reference="IzD-TF-RqQ"/>
+                    <exclude reference="f3x-vq-7bO"/>
+                    <exclude reference="vtL-l8-40T"/>
+                    <exclude reference="Lj8-hf-F9X"/>
+                    <exclude reference="MYu-Vc-uhU"/>
+                    <exclude reference="T0k-0w-kry"/>
+                    <exclude reference="Zpz-uW-Web"/>
+                    <exclude reference="xCl-hD-Icc"/>
+                    <exclude reference="xff-M9-oUm"/>
+                    <exclude reference="1Ev-YR-fat"/>
+                    <exclude reference="D8W-KQ-ebm"/>
+                    <exclude reference="hUK-As-DqE"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <exclude reference="Nv0-RY-sKu"/>
+                    <exclude reference="PMl-U8-wg2"/>
+                    <exclude reference="T0k-0w-kry"/>
+                    <include reference="Zpz-uW-Web"/>
+                    <include reference="xCl-hD-Icc"/>
+                    <exclude reference="xff-M9-oUm"/>
+                    <include reference="1Ev-YR-fat"/>
+                    <exclude reference="D8W-KQ-ebm"/>
+                    <include reference="hUK-As-DqE"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="LQx-ny-CAa"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="F4d-Te-vCH"/>
+                    <include reference="IzD-TF-RqQ"/>
+                    <include reference="f3x-vq-7bO"/>
+                    <include reference="vtL-l8-40T"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="5sK-Uu-nk0"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0Fz-6J-Wcy"/>
+                    <include reference="Epd-Ky-FP2"/>
+                    <include reference="pEK-OU-tcV"/>
+                    <include reference="Lj8-hf-F9X"/>
+                    <include reference="MYu-Vc-uhU"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="620" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CenterOfTheArts" width="2048" height="1365"/>
+    </resources>
+</document>
